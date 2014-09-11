@@ -1,0 +1,125 @@
+<!--
+General Assembly - About Me Project
+
+Author: Yuen Choi
+Date: September 11, 2014
+
+-----PLAN-----
+Image Carousel will update information content after click of a button
+
+TASKS
+-Add support for webkit and moz
+-Mobile-friendly
+-Clean up redundant/obsolete code
+
+HISTORY
+09/11/2014			Coded inital draft of the about me page
+-->
+<!DOCTYPE html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+
+
+<script>
+  $('.button_next').on('click', function() {
+      alert("Works");
+  });
+</script>
+
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #ffffff;
+}
+div {
+  background-size: cover;
+  position: relative;
+  margin-top:10px;
+
+}
+
+header {
+	max-width:600px;
+	text-align:left;
+}
+
+.contactdetails {
+	height:100px;
+
+}
+
+.contactdetails img {
+	float:right;
+	width:75px;	
+	position:relative;
+	right:10px;
+	top:10px;
+}
+
+.contactname {
+  font-size: 50px;
+  color: #99c4f6;
+  position:relative;
+  left:10px;
+}
+
+.contactinfo {
+	font-size: 14px;
+	color: #bbbbbb;
+	line-height:20px;
+	position:relative;
+	left:12px;
+}
+
+.floatsright {
+	float:right;
+}
+
+.imagecarousel {
+	text-align:center;
+}
+
+.imagecarousel img {
+	width:300px; 
+	border: 5px solid #99C4F6;
+    border-radius: 10px;
+	
+	
+}
+
+.button_last {
+	float:left;
+}
+
+.button_last img {
+	 transform: scaleY(-1) rotate(180deg);
+	  -webkit-transform: scaleY(-1) rotate(180deg);
+	  -moz-transform: scaleY(-1) rotate(180deg);
+}
+</style>
+
+</head>
+
+<body>
+<header>
+	<div class="contactdetails">
+    	<div class="button_next"><img src="http://www.clker.com/cliparts/1/f/a/2/1349807104707654381Next%20Button.svg.med.png"></div>
+        <span class="contactname">Ky Meyer-Choi</span><br />
+        <span class="contactinfo">256 Mather Street, Oakland CA 94611 <br />
+        e: ky_len@hotmail.com | c: (510) 990-4696</span>
+    </div>
+</header>
+
+<div class="imagecarousel">
+<img src="http://imgur.com/lfSEkOP.jpg"/>
+</div>
+
+
+<div class="contactdetails">
+    	<div class="button_last"><img src="http://www.clker.com/cliparts/1/f/a/2/1349807104707654381Next%20Button.svg.med.png"></div>
+        
+    </div>
+</body>
